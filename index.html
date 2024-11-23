@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p style="background-image: url('c:\Users\Mae Raven Bonggay\Downloads\sky.jpg');"></p>
+        <!-- Header -->
+        <h1>Student Enrolment Form</h1>
+
+        <!-- Instructions -->
+        <h2 style="color: blue;">Instructions:</h2>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+
+        <!-- Enrollment Form -->
+        <form action="/submit" method="POST">
+            <!-- Full Name -->
+            <label for="fullName"id='form-text'>Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label for="email" id="form-text">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Age -->
+            <label for="age" id="form-text">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <!-- Sex -->
+            <label id="form-text">Sex:</label>
+            
+            <label for="male" id="male">Male</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            
+            <label for="female" id="Female">Female</label>
+            <input type="radio" id="female" name="sex" value="Female" required>
+
+            <!-- Course Options -->
+            <label for="course" id="form-text">Course Options:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSA</option>
+                <option value="BSAIS">BSAIS</option>
+                <option value="BSPA">BSE</option>
+                <option value="DHRA">BSPA</option>
+                <option value="BSAIS">BSSW</option>
+                <option value="BSAIS">BTVTED</option>
+                <option value="BSAIS">ABELS</option>
+                <option value="BSAIS">DHRS</option>
+            </select>
+
+            <!-- Interests -->
+            <label id="form-text">Interests:</label>
+            <div id="interest">
+                <input type="checkbox" id="WebDev" name="interests" value="Web Development">
+                <label for="WebDev" id="WebDev">Web Development</label>
+                <br>
+                <input type="checkbox" id="DataScience" name="interests" value="Data Science">
+                <label for="DataScience" id="DataScience">Data Science</label>
+                <br>
+                <input type="checkbox" id="Networking" name="interests" value="Networking">
+                <label for="Networking" id="Networking">Networking</label>
+                <br>
+                <input type="checkbox" id="GraphicDesign" name="interests" value="Graphic Design">
+                <label for="GraphicDesign" id="GraphicDesign">Graphic Design</label>
+                <br>
+                <input type="checkbox" id="Chemistry" name="interests" value="Chemistry">
+                <label for="Chemistry" id="Chemistry">Chemistry</label>
+                <br>
+                <input type="checkbox" id="Journalism" name="interests" value="Journalism">
+                <label for="Journalism" id="Journalism">Journalism</label>
+            </div>
+
+
+            <!-- Submit Button -->
+            <button type="Submit" id="enrol">Enroll Now</button>
+        </form>
+
+        <!-- Student Data Table -->
+        <h3>Student Data</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Inputs -->
+                <tr>
+                    <td>1</td>
+                    <td>Jimmy Neutral</td>
+                    <td>nucleus@gmail.com</td>
+                    <td>10</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Data Science, Chemistry</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Walter White</td>
+                    <td>heisenberg@gmail.com</td>
+                    <td>52</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Chemistry, Data algorithm</td>
+                </tr>
+                    <td>3</td>
+                    <td>John Allen Bonggay</td>
+                    <td>stamaria_wanna_be@gmail.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Chemistry, Journalist</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dick Grayson</td>
+                    <td>nightwing@gmail.com</td>
+                    <td>20</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Data algorithm</td>
+                </tr>
+                <!-- Additional Rows -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
